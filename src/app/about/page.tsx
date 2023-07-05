@@ -12,7 +12,7 @@ export default async function about() {
     console.log("Fetch the page Details", repo)
     return (
         <div>
-            <p>Repo Stars: {repo.stargazers_count}</p>
+            <p>Repo Details: <pre className="">{JSON.stringify(repo, null, 2)}</pre></p>
         </div>
     )
 }
